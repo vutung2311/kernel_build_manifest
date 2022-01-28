@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://source.codeaurora.org/quic/la/" name="caf" review="codeaurora.org"/>
+  <default remote="caf" revision="kernel.build.lnx.1.0" sync-j="8"/>
+  <project name="kernel/build" path="kernel_platform/build" revision="72815e43078b0f199c190203ccb44108addb4eab" upstream="refs/heads/kernel.lnx.5.10.r1-rel"/>
+  <project groups="qki" name="kernel/common" path="kernel_platform/common" revision="44550a1c5019f8425eb11867edc7fa4c4b5a46c7" upstream="refs/heads/ks-kernel.lnx.1.0.r1-rel"/>
+  <project name="kernel/msm-5.10" path="kernel_platform/msm-kernel" revision="82d4dc318853eedd9b94edbb0e879f99c78720ab" upstream="refs/heads/kernel.lnx.5.10.r1-rel">
+    <linkfile dest="kernel_platform/common/build.config.msm.waipio" src="build.config.msm.waipio"/>
+    <linkfile dest="kernel_platform/common/build.config.msm.waipio.tuivm" src="build.config.msm.waipio.tuivm"/>
+    <linkfile dest="kernel_platform/common/build.config.msm.lahaina" src="build.config.msm.lahaina"/>
+  </project>
+  <project name="kernel/prebuilts/build-tools" path="kernel_platform/prebuilts/kernel-build-tools" revision="10ab783184f77d3ea15bf666426a7138b0f62bfc" upstream="refs/heads/ks-kernel.lnx.1.0.r1-rel"/>
+  <project name="kernel_platform/external/dtc" revision="b5a44a6e8c72c9fc5d72c6cff09ee3b9a86da769" upstream="refs/heads/kernel.build.lnx.1.0.r1-rel"/>
+  <project name="kernel_platform/kernel/prebuilts/mainline/arm64" revision="de12e10cfe8d67d5c0627069306fda939f52154a" upstream="refs/heads/kernel.lnx.5.10.r1-rel"/>
+  <project name="kernel_platform/prebuilts/build-tools" revision="846214bd11004546cd3fc2590c73c628fcd6778c" upstream="refs/heads/ks-kernel.lnx.1.0.r1-rel"/>
+  <project name="kernel_platform/system/tools/mkbootimg" path="kernel_platform/tools/mkbootimg" revision="08410f46318f3f301b96ed058466ab0dde0b050b" upstream="refs/heads/ks-kernel.lnx.1.0.r1-rel"/>
+  <project name="kernelplatform/prebuilts-master/clang/host/linux-x86" path="kernel_platform/prebuilts-master/clang/host/linux-x86" revision="0fc3d01a780023469b7acc18c56a9cf5099a6d6c" upstream="refs/heads/ks-kernel.lnx.1.0.r1-rel"/>
+  <project name="kernelplatform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" path="kernel_platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" revision="c9f87ae369034b4942536a1c5bd62e4cd1d828e3" upstream="refs/heads/ks-kernel.lnx.1.0.r1-rel"/>
+</manifest>
