@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://source.codeaurora.org" name="caf" review="codeaurora.org"/>
+  <default remote="caf" revision="kernel.build.lnx.1.0" sync-j="8"/>
+  <project name="kernel/build" path="kernel_platform/build" revision="refs/heads/kernel.lnx.5.10.r1-rel"/>
+  <project groups="qki" name="kernel/common" path="kernel_platform/common" revision="refs/heads/ks-kernel.lnx.1.0.r1-rel"/>
+  <project name="kernel/msm-5.10" path="kernel_platform/msm-kernel" revision="refs/heads/kernel.lnx.5.10.r1-rel">
+    <linkfile dest="kernel_platform/common/build.config.msm.waipio" src="build.config.msm.waipio"/>
+    <linkfile dest="kernel_platform/common/build.config.msm.waipio.tuivm" src="build.config.msm.waipio.tuivm"/>
+    <linkfile dest="kernel_platform/common/build.config.msm.lahaina" src="build.config.msm.lahaina"/>
+  </project>
+  <project clone-depth="1" name="kernel/prebuilts/build-tools" path="kernel_platform/prebuilts/kernel-build-tools" revision="refs/heads/ks-kernel.lnx.1.0.r1-rel"/>
+  <project name="kernel_platform/external/dtc" revision="refs/heads/kernel.build.lnx.1.0.r1-rel"/>
+  <project name="kernel_platform/kernel/prebuilts/mainline/arm64" revision="refs/heads/kernel.lnx.5.10.r1-rel"/>
+  <project clone-depth="1" name="kernel_platform/prebuilts/build-tools" revision="refs/heads/ks-kernel.lnx.1.0.r1-rel"/>
+  <project name="kernel_platform/system/tools/mkbootimg" path="kernel_platform/tools/mkbootimg" revision="refs/heads/ks-kernel.lnx.1.0.r1-rel"/>
+  <project clone-depth="1" name="kernelplatform/prebuilts-master/clang/host/linux-x86" path="kernel_platform/prebuilts-master/clang/host/linux-x86" revision="refs/heads/ks-kernel.lnx.1.0.r1-rel"/>
+  <project clone-depth="1" name="kernelplatform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" path="kernel_platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" revision="refs/heads/ks-kernel.lnx.1.0.r1-rel"/>
+</manifest>
