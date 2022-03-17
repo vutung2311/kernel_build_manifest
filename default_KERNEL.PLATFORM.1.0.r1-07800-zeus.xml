@@ -5,10 +5,7 @@
   <default remote="caf" revision="kernel.build.lnx.1.0" sync-j="8"/>
   <project clone-depth="1" name="kernel/build" path="kernel_platform/build" revision="refs/heads/kernel.lnx.5.10.r1-rel"/>
   <project clone-depth="1" groups="qki" name="kernel/common" path="kernel_platform/common" revision="c36e5828d041571d3343d0a458b4b21d6e1b09f3"/>
-  <project name="vutung2311/Xiaomi_Kernel_OpenSource" remote="github" path="kernel_platform/msm-kernel" revision="refs/heads/zeus-s-oss" upstream="refs/heads/zeus-s-oss">
-    <linkfile dest="kernel_platform/common/build.config.msm.zeus" src="build.config.msm.zeus"/>
-    <linkfile dest="kernel_platform/common/build.config.msm.zeus.tuivm" src="build.config.msm.zeus.tuivm"/>
-  </project>
+  <project name="vutung2311/Xiaomi_Kernel_OpenSource" remote="github" path="kernel_platform/msm-kernel" revision="refs/heads/zeus-s-oss" upstream="refs/heads/zeus-s-oss"/>
   <project clone-depth="1" name="MiCode/kernel_devicetree" remote="github" path="kernel_platform/msm-kernel/arch/arm64/boot/dts/vendor" revision="refs/heads/zeus-s-oss" upstream="refs/heads/zeus-s-oss"/>
   <project clone-depth="1" name="kernel/prebuilts/build-tools" path="kernel_platform/prebuilts/kernel-build-tools" revision="refs/heads/ks-kernel.lnx.1.0.r1-rel"/>
   <project clone-depth="1" name="kernel_platform/external/dtc" revision="refs/heads/kernel.build.lnx.1.0.r1-rel"/>
